@@ -1,0 +1,121 @@
+<!doctype html>
+<!-- Tambahkan scroll-smooth agar efek scroll berjalan halus -->
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil prodi Informatika UNU Jogja</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+
+    <nav class="fixed top-0 left-0 w-full bg-sky-100 shadow-md z-50 px-6 py-3 flex items-center justify-between">
+      <div class="flex items-center">
+        <img src="img/LOGO_UNU_YOGYAKARTA.png" alt="LOGO_UNU_YOGYAKARTA" class="h-8 w-auto">
+      </div>
+      
+      <div class="hidden md:flex items-center gap-4">
+        <ul class="flex gap-4">
+          <li>
+            <a href="#beranda" class="inline-block font-bold px-4 py-2 rounded-lg transition-all shadow-sm hover:scale-105 hover:bg-blue-200">
+              Beranda
+            </a>
+          </li>
+          <li>
+            <a href="#tentang" class="inline-block font-bold px-4 py-2 rounded-lg transition-all shadow-sm hover:scale-105 hover:bg-blue-200">
+              Tentang
+            </a>
+          </li>
+          <li>
+            <a href="#kontak" class="inline-block font-bold px-4 py-2 rounded-lg transition-all shadow-sm hover:scale-105 hover:bg-blue-200">
+              Kontak
+            </a>
+          </li>
+        </ul>
+      </div>
+    
+      <button id="menu-toggle" class="block md:hidden w-10 h-10 p-1 rounded-lg hover:bg-blue-200 cursor-pointer focus:outline-none">
+        <img src="img/Bar.png" alt="Toggle Menu" class="w-full h-full object-contain">
+      </button>
+      <div 
+        id="mobile-menu" 
+        class="hidden absolute top-full left-0 w-full bg-sky-100 flex flex-col items-center gap-4 py-4 px-6 shadow-md z-50 md:hidden transition-all duration-200 ease-in-out opacity-0 transform scale-95 origin-top">
+        <ul class="flex flex-col gap-4 w-full text-center">
+          <li><a href="#beranda" class="block font-bold px-4 py-2 rounded-lg hover:bg-blue-200">Beranda</a></li>
+          <li><a href="#tentang" class="block font-bold px-4 py-2 rounded-lg hover:bg-blue-200">Tentang</a></li>
+          <li><a href="#kontak" class="block font-bold px-4 py-2 rounded-lg hover:bg-blue-200">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="pt-18">
+      <h1 class="text-3xl font-bold text-center my-6">
+        Profil Program Studi Informatika UNU Jogja
+      </h1>
+      
+      <div id="beranda" class="scroll-mt-24 rounded-lg shadow-lg bg-gradient-to-l from-cyan-500 to-blue-500 text-white m-5 flex flex-col md:flex-row justify-between items-center p-6 gap-6">
+        <p class="text-lg ">Program Studi Informatika Universitas Nahdlatul Ulama Yogyakarta (UNU Jogja) hadir sebagai pusat keunggulan akademik yang secara progresif dirancang untuk menjawab tantangan era transformasi digital global. Dengan kurikulum yang adaptif dan visioner, kami tidak hanya membekali mahasiswa dengan keahlian teknis mutakhir seperti Kecerdasan Buatan (AI), Data Science, dan Cyber Security tetapi juga mengintegrasikannya dengan semangat inovasi serta nilai-nilai etika luhur. Kami berkomitmen mencetak generasi technopreneur dan profesional IT masa depan yang mampu menciptakan solusi teknologi berdampak luas, relevan dengan kebutuhan industri mutakhir, serta siap memimpin perubahan di tengah dinamika zaman yang terus berevolusi.</p>
+        <img src="img/Kampus.webp" alt="gambar kampus" class="w-full md:w-96 h-64 object-cover rounded-lg">
+      </div>
+
+      <div id="tentang" class="scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center mt-12 mb-4">
+          Tentang
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 p-6 gap-6 max-w-6xl mx-auto">
+           <div class="border rounded-lg shadow-lg bg-blue-400 text-white p-10 text-center">
+             <h6 class="font-bold">Keunggulan
+              <p class="font-normal">
+                sistem pembelajaran yang adaptif, fokus pada teknologi masa depan (seperti AI atau Big Data), dan metode belajar berbasis proyek nyata (project-based learning).
+              </p>
+             </h6>
+           </div>
+           <div class="border rounded-lg shadow-lg bg-blue-400 text-white p-10 text-center">
+             <h6 class="font-bold">Fasilitas
+              <p class="font-normal">
+                ekosistem belajar yang mendukung, seperti laboratorium komputer berspesifikasi tinggi, akses jurnal global, serta ruang kolaborasi yang nyaman untuk berdiskusi.
+              </p>
+             </h6>
+           </div>
+           <div class="border rounded-lg shadow-lg bg-blue-400 text-white p-10 text-center">
+             <h6 class="font-bold">Kerja sama
+              <p class="font-normal">
+                Kami menjalin sinergi yang kuat dengan berbagai perusahaan teknologi lokal, instansi pemerintah, dan komunitas global untuk membuka peluang magang, riset bersama, serta penyaluran kerja yang luas bagi mahasiswa.
+              </p>
+             </h6>
+           </div>
+        </div>
+      </div>
+
+      <form id="kontak" class="scroll-mt-24">
+        <h2 class="text-2xl font-bold text-center mt-12 mb-4">
+          Kontak
+        </h2>
+        <div class="px-6 max-w-6xl mx-auto mb-8">
+          <div class="shadow-lg rounded-lg bg-blue-400 text-white p-6">
+            <p>Hubungi kami untuk kemajuan kami dalam belajar membuat web.</p>
+            <div>
+                 <label for="name" class="block text-sm font-bold text-white mb-1 pt-4">
+                    Nama Lengkap
+                 </label>
+                 <input type="text" id="name" name="name" required
+                     class="w-full px-4 py-2 border border-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
+            </div>
+             <div>
+                 <label for="name" class="block text-sm font-bold text-white mb-1 pt-4">
+                    Pesan
+                 </label>
+                 <input type="text" id="pesan" name="pesan" required
+                     class="w-full px-4 py-6 border border-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <footer class="text-center py-4 bg-gray-200 text-sm">
+      &copy; 2026 Mahasiswa Informatika UNU Jogja. Fikri.
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
